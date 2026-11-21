@@ -1,6 +1,8 @@
 # Amazon Clone
 
-A storefront UI clone of Amazon, built as a practice project to exercise a production-style Next.js codebase: product catalog, product pages, cart and checkout flow.
+A storefront UI clone of Amazon, built as a practice project to exercise a production-style Next.js codebase: product catalog, product pages, cart and checkout flow. The full 194-product catalog is bundled into the app, so the demo runs with zero external API dependencies.
+
+**Live demo:** https://amazon-clone-blush-three-24.vercel.app
 
 ## Stack
 
