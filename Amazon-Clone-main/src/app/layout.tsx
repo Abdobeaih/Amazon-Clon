@@ -17,13 +17,13 @@ const notoSerifGujarati = Noto_Serif_Gujarati({
 // meta data of our project
 export const metadata: Metadata = {
   title: "Amazon Clone",
-  description: "Amazon Clone project built during DevWave training by group4.",
-  authors: [{ name: "group4" }],
-  keywords: ["Amazon Clone", "DevWave Training", "Next.js Project", "group4"],
+  description: "Amazon-style storefront built with Next.js, TypeScript and Redux Toolkit.",
+  authors: [{ name: "Abdelrahman Beaih" }],
+  keywords: ["Amazon Clone", "Next.js", "TypeScript", "Redux Toolkit"],
   openGraph: {
-    title: "Amazon Clone - DevWave Training",
+    title: "Amazon Clone",
     description:
-      "Amazon Clone project built during DevWave training by group4.",
+      "Amazon-style storefront built with Next.js, TypeScript and Redux Toolkit.",
     url: "https://your-deployed-link.com",
     siteName: "Amazon Clone",
     images: [

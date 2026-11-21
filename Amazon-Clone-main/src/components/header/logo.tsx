@@ -48,7 +48,7 @@ const Logo = () => {
           />
           <div className="w-[150px] ">
             <p className="text-xs font-lighter text-[#AAB5B6]">
-              Delivering to Surat 394210
+              Deliver to Egypt
             </p>
             <p className="text-white cursor-pointer hover:underline text-sm">
               Update location

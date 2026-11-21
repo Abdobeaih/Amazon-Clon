@@ -46,20 +46,6 @@ const ProducData: React.FC<ProductType> = ({ productDetails }) => {
                 <h3 className=" text-[33px] mb-1">$ {productDetails.price}</h3>
                 <p className="text-[18px] mb-2">All price include VAT.</p>
 
-                {/* Discount */}
-                <div className="mb-3 text-[18px]">
-                  <span className="text-[var(--bg)]">Sign in to redeem.</span>
-                  <span className=" bg-[#71ed58] px-2  py-1 me-2">
-                    Extra 20% off
-                  </span>
-                  <span className="text-muted small">
-                    with meem credit cards
-                  </span>
-                  <p className="small mt-1 mb-0">
-                    Enter code <strong>DevWave</strong> at checkout. Discount by
-                    DevWave.
-                  </p>
-                </div>
 
                 {/* Icons Section */}
                 <div className="flex  text-[var(--blue-link)]  gap-5 text-center border-top border-bottom py-2 mb-3">
