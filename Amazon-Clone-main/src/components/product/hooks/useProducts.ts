@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProducts } from "@/redux/slices/productSlice";
+import { addCartItem } from "@/redux/slices/cartSlice";
 import { RootState, AppDispatch } from "@/redux/store";
 import { Product } from "../types/product.types";
 
@@ -16,10 +17,12 @@ export const useProducts = () => {
     }
   }, [status, dispatch]);
 
-  const handleAddToCart = (product: Product) => {
-    // TODO: Implement add to cart functionality
-    console.log("Adding to cart:", product);
-  };
+  const handleAddToCart = useCallback(
+    (product: Product) => {
+      dispatch(addCartItem(product));
+    },
+    [dispatch]
+  );
 
   return {
     products,

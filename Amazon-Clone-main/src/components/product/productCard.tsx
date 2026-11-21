@@ -32,9 +32,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
       </p>
       <button
         className="mt-4 w-1/2 self-start bg-yellow-400 text-gray-800 py-1 text-sm rounded-full font-medium hover:bg-yellow-500 transition-colors duration-200"
-        onClick={() => onAddToCart(product)}
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          onAddToCart(product);
+        }}
       >
-        Add to the card
+        Add to Cart
       </button>
       <div className="text-xs text-gray-500 mt-auto">
         <p>Category: {product.category}</p>

@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import products from "@/Data/products";
 
 interface Product {
   id: number;
@@ -22,12 +23,12 @@ const initialState: ProductState = {
   error: null,
 };
 
+// The catalog is bundled with the app (src/Data/products.ts) so the
+// storefront never depends on an external API at runtime.
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
-    const response = await fetch("https://fakestoreapi.com/products");
-    const data = await response.json();
-    return data;
+    return products;
   }
 );
 
